@@ -12,11 +12,11 @@
                     [ CONTROL PANEL ]
                 </div>
                 <div class="list-group list-group-flush">
-                    <a href="#" class="list-group-item list-group-item-action bg-dark text-light border-secondary">Dashboard</a>
-                    <a href="#" class="list-group-item list-group-item-action bg-dark text-light border-secondary">Struktur Grup (Hall of Fame)</a>
-                    <a href="#" class="list-group-item list-group-item-action bg-dark text-light border-secondary">Moderasi Feed</a>
-                    <a href="#" class="list-group-item list-group-item-action bg-dark text-light border-secondary">Gacha PP</a>
-                    <a href="#" class="list-group-item list-group-item-action bg-dark text-light border-secondary">Analisa Chat WA</a>
+                    <a href=" " class="list-group-item list-group-item-action bg-dark text-light border-secondary">Dashboard</a>
+                    <a href="{{ route('admin.hall_of_fame.index') }}" class="list-group-item list-group-item-action bg-dark text-light border-secondary">Struktur Grup (Hall of Fame)</a>
+                    <a href=" " class="list-group-item list-group-item-action bg-dark text-light border-secondary">Moderasi Feed</a>
+                    <a href=" " class="list-group-item list-group-item-action bg-dark text-light border-secondary">Gacha PP</a>
+                    <a href=" " class="list-group-item list-group-item-action bg-dark text-light border-secondary">Analisa Chat WA</a>
                 </div>
             </div>
         </div>

@@ -77,7 +77,9 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link active" href="#">HOME</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">HALL OF FAME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('hall_of_fame') }}">HALL OF FAME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">CONTRIBUTION RANKING</a></li>
+                    <LI class="nav-item"><a class="nav-link" href="#">GACHA PP</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">FEED</a></li>
                 </ul>
             </div>
