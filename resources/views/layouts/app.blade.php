@@ -94,7 +94,7 @@
                         <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark" style="background-color: #1a1a1a;">
                             <li><a class="dropdown-item" href="#">Profile</a></li>
                             @if(Auth::user()->role === 'admin')
-                                <li><a class="dropdown-item text-warning" href="#">Dashboard Admin</a></li>
+                                <li><a class="dropdown-item text-warning" href="{{ route('admin.dashboard') }}">Dashboard Admin</a></li>
                             @endif
                             <li><hr class="dropdown-divider border-secondary"></li>
                             <li>
