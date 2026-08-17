@@ -46,6 +46,13 @@
             text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
         }
 
+        /* Efek Menyala untuk Halaman Aktif */
+        .nav-link.active-glow {
+            color: #ffc107 !important; /* Warna kuning emas / warning */
+            text-shadow: 0 0 12px rgba(255, 193, 7, 0.8);
+            font-weight: 900;
+        }
+
         /* Custom Button Sign In */
         .btn-glow {
             border: 2px solid #fff;
@@ -74,13 +81,25 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="#">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('hall_of_fame') }}">HALL OF FAME</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">CONTRIBUTION RANKING</a></li>
-                    <LI class="nav-item"><a class="nav-link" href="#">GACHA PP</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">FEED</a></li>
+                <ul class="navbar-nav gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->is('/') ? 'active-glow' : '' }}" href="{{ url('/') }}">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->is('about') ? 'active-glow' : '' }}" href="{{ route('about') }}">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->routeIs('hall_of_fame') ? 'active-glow' : '' }}" href="{{ route('hall_of_fame') }}">HALL OF FAME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->is('contribution-ranking') ? 'active-glow' : '' }}" href="#">CONTRIBUTION RANKING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->is('pp-group-selection') ? 'active-glow' : '' }}" href="#">PP GROUP SELECTION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->is('feed') ? 'active-glow' : '' }}" href="#">FEED</a>
+                    </li>
                 </ul>
             </div>
             <div class="d-none d-lg-block">

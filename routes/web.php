@@ -37,3 +37,5 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
 
 // Route Publik
 Route::get('/hall-of-fame', [PageController::class, 'hallOfFame'])->name('hall_of_fame');
+Route::get('/about', [App\Http\Controllers\PageController::class, 'about'])->name('about');
+Route::get('/hall-of-fame', [App\Http\Controllers\PageController::class, 'hallOfFame'])->name('hall_of_fame');
